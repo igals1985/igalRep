@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function dateFunc(param) {
+            let date
+            switch (param) {
+                case 'd': date = new Date().getDay; break;
+                case 'm': date = new Date().getMonth; break;
+                case 'y': date = new Date().getFullYear; break;
+            }
+
+            let element = document.getElementById("dateTag");
+            element.innerText = date;
+            //document.write("line by testFunc <br/><button onclick='testFunc()'>call testFunc</button><br/>");
+        }
+    </script>
+</head>
+<body onload="dateFunc()">
+    <h1>Get The Date</h1>
+    <p>
+        result: <span id="dateTag"></span>
+    </p>
+    <button onclick="dateFunc('d')">Day</button>
+    <button onclick="dateFunc('m')">Mount</button>
+    <button onclick="dateFunc('y')">Year</button>
+</body>
+</html>
