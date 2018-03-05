@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .box {
+            width: 50%;
+            margin: 25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: antiquewhite;
+            border-color: burlywood;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        input {
+            display: inline;
+            width: 50px;
+            height: 30px;
+            margin-right: 50px;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            margin-top:20px;
+        }
+
+        button {
+            display: block;
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            margin-left: 25%;
+        }
+
+        #color1 {
+            padding-left: 2px;
+        }
+
+        label {
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #pageBack {
+            margin: 0px;
+            width: 15px;
+            padding-left: 0px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <script>
+        function mathOpr(param) {
+            var element1 = Number(document.getElementById("num1").value);
+            var element2 = Number(document.getElementById("num2").value);
+            if (element1== "" || element2 == "") { alert("Please enter a number") }
+            else {
+                switch (param) {
+                    case 'add': alert(`${element1 + element2}`); break;
+                    case 'sub': alert(`${element1 - element2}`); break;
+                    case 'mul': alert(`${element1 * element2}`); break;
+                    case 'div': alert(`${element1 / element2}`); break;
+                }
+
+            }
+            document.getElementById("num1").value=""
+            document.getElementById("num2").value=""
+        }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <h1 id="title"> calculator</h1>
+    </div>
+    <div class="box">
+        <label>enter 1st num:</label>
+        <input type="number" id="num1" />
+
+        <label>enter 2nd num:</label>
+        <input type="number" id="num2" />
+        <button onclick="mathOpr('add')">Addition</button>
+        <button onclick="mathOpr('sub')">Subtraction</button>
+        <button onclick="mathOpr('mul')">Multiplication</button>
+        <button onclick="mathOpr('div')">Division</button>
+    </div>
+</body>
+</html>

@@ -6,17 +6,27 @@
     <title></title>
     <script>
         function dateFunc(param) {
-            let date
+            let date = new Date
             switch (param) {
-                case 'd': date = new Date().getDay; break;
-                case 'm': date = new Date().getMonth; break;
-                case 'y': date = new Date().getFullYear; break;
+                case 'd': date = date.getDay(); break;
+                case 'm': date = date.getDay(); break;
+                case 'y': date = date.getDay(); break;
             }
 
             let element = document.getElementById("dateTag");
             element.innerText = date;
             //document.write("line by testFunc <br/><button onclick='testFunc()'>call testFunc</button><br/>");
         }
+
+/*
+            let date = new Date;
+            let res = document.getElementById("res");
+            switch (param) {
+                case 'DayInMonth': res.innerHTML = date.getDate(); break;
+                case 'Day': res.innerHTML = date.getDay() + 1; break;
+                case 'Month': res.innerHTML = date.getMonth() + 1; break;
+                case 'Year': res.innerHTML = date.getFullYear(); break;
+        */
     </script>
 </head>
 <body onload="dateFunc()">
