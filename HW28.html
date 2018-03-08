@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -87,4 +88,95 @@
 
     </div>
 </body>
+=======
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .box {
+            width: 35%;
+            margin: 25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color:grey;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        select, button, input {
+            display: inline-block;
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+
+        #color1 {
+            padding-left: 2px;
+        }
+
+        label {
+            display: block;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #pageBack {
+            margin: 0px;
+            width: 15px;
+            padding-left: 0px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    </style>
+
+    <script>
+
+        function clickAsync() {
+            var timeRest = document.getElementById("time").value;
+            var colorInput = document.getElementById("color1")
+            if (timeRest != "" && colorInput.value != colorInput.defaultValue) {
+                document.body.style.backgroundColor = colorInput.value;
+                setTimeout(function toDo() { saveChanges("white") }, timeRest*1000)
+            }
+            else {alert("Please insert all params")}
+            
+           
+
+        }
+        function saveChanges(param) {
+            document.body.style.backgroundColor = param; 
+            }
+    </script>
+</head>
+<body>
+
+    <div class="box">
+        <label>enter time(sc.):</label>
+        <input type="number" id="time" />
+
+
+        <label>enter color:</label>
+        <input type="color" value="#ffffff" id="color1" />
+
+        <br />
+        <button onclick="clickAsync()">save changes</button>
+
+    </div>
+</body>
+>>>>>>> 67cd8c837454981ddc237f1f86b80d1975f7c686
 </html>
