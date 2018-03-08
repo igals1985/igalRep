@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .box {
+            width: 35%;
+            margin: 25%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            background-color: grey;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+            text-align: center;
+            float:left;
+            font-size:1.7em;
+        }
+
+        select, button, input {
+            display: inline-block;
+            width: 250px;
+            height: 30px;
+            margin: 10px;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            font-size:1em;
+        }
+
+        #color1 {
+            padding-left: 2px;
+        }
+
+        label {
+            display: block;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #pageBack {
+            margin: 0px;
+            width: 15px;
+            padding-left: 0px;
+            height: 15px;
+            margin-right: 10px;
+        }
+        #visitorList {
+            display:inline-block;
+        }
+
+    </style>
+    <script src="Script.js"></script>
+</head>
+<body onload="displayOrder()">
+    <div class="box">
+        <label>Full Name:</label>
+        <input type="text" style="text-align:center;" class="visitorDeatails" id="name" />
+
+        <label>Age:</label>
+        <input type="number" style="text-align:center;" class="visitorDeatails" id="age" />
+
+        <label>Birdth Date:</label>
+        <input type="date" style="text-align:center;" class="visitorDeatails" id="birdth" />
+
+        <label>Favorite Color:</label>
+        <input type="color" style="text-align:center;" value="#ffffff" class="visitorDeatails" id="color1" />
+
+        <br />
+        <button onclick="addVisitor()">SAVE</button>
+
+        <br /><br />
+        <button onclick="clearForm()" >Clear</button>
+
+    </div>
+    <div id="visitorList">
+        <p ></p>
+    </div>
+</body>
+</html>
