@@ -1,0 +1,9 @@
+
+<div>
+<h1>Multiplication Table</h1>
+<table border="1" id="category_table">
+  <tr *ngFor="let outer of numberArray; let j=index">
+      <td *ngFor="let outer of numberArray">{{(j+1)*outer}}</td>
+  </tr>
+</table>
+</div>
