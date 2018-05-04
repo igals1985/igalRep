@@ -1,0 +1,26 @@
+img{
+    width: 80px;
+    height: 50px;
+}
+table{
+    color: #000000;
+}
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.input-group{
+    margin-left: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

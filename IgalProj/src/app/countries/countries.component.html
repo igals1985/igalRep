@@ -1,0 +1,34 @@
+<!--
+<div *ngFor="let x of localCountriesInfo">
+  {{x.name}}{{x.nativeName}}{{x.capital}}{{x.population}}<img [src]=x.flag />
+  </div>
+-->
+
+
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter your Search" [(ngModel)]="NameSearch">
+              <span class="input-group-btn">
+              </span>
+          </div>
+
+
+<div *ngIf="localCountriesInfo">
+  <table>
+  <thead>
+      <th>Name</th>
+      <th>Nativ Name</th>
+      <th>Capital</th>
+      <th>Population</th>
+      <th>flag</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let x of localCountriesInfo">
+          <td>{{x.name}}</td>
+          <td>{{x.nativeName}}</td>
+          <td>{{x.capital}}</td>
+          <td>{{x.population}}</td>
+          <td><img [src]=x.flag /></td>
+      </tr>
+  </tbody>
+</table>
+</div>
