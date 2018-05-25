@@ -1,0 +1,6 @@
+C:\Visual Studio Projects\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+C:\Visual Studio Projects\ConsoleApplication4\obj\Debug\ConsoleApplication4.csprojResolveAssemblyReference.cache
+C:\Visual Studio Projects\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+C:\Visual Studio Projects\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+C:\Visual Studio Projects\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+C:\Visual Studio Projects\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
