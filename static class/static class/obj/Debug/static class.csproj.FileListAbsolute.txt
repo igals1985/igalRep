@@ -1,0 +1,7 @@
+C:\Users\igals1985\Documents\C#\static class\static class\bin\Debug\static class.exe.config
+C:\Users\igals1985\Documents\C#\static class\static class\bin\Debug\static class.exe
+C:\Users\igals1985\Documents\C#\static class\static class\bin\Debug\static class.pdb
+C:\Users\igals1985\Documents\C#\static class\static class\obj\Debug\static class.csprojResolveAssemblyReference.cache
+C:\Users\igals1985\Documents\C#\static class\static class\obj\Debug\static class.csproj.CoreCompileInputs.cache
+C:\Users\igals1985\Documents\C#\static class\static class\obj\Debug\static class.exe
+C:\Users\igals1985\Documents\C#\static class\static class\obj\Debug\static class.pdb
